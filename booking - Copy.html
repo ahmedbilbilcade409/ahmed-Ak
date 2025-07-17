@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guest Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guest Booking Form</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery & Data</a>
+            <a href="booking.html">Guest Booking</a>
+            <a href="help.html">Help</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Booking Details</legend>
+
+                <label>Name: <input type="text" name="name" required placeholder="Enter your name"></label><br>
+
+                <label>Major:
+                    <select name="major" required>
+                        <option value="">--Select--</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="it">Information Tech</option>
+                    </select>
+                </label><br>
+
+                <label>Gender:
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </label><br>
+
+                <label>Hobbies:
+                    <input type="checkbox" name="hobbies" value="reading"> Reading
+                    <input type="checkbox" name="hobbies" value="sports"> Sports
+                </label><br>
+
+                <label>Comments:
+                    <textarea name="comments" rows="4" cols="30" placeholder="Write your message here..."></textarea>
+                </label><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name</p>
+    </footer>
+</body>
+</html>
